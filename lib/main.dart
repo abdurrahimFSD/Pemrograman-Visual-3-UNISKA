@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
           // Header
           backgroundColor: const Color.fromARGB(255, 62, 146, 255),
           title: const Text(
-            "Tugas 1 Flutter",
+            "Tugas 2 Visual",
             style: TextStyle(color: Colors.white),
           ),
           centerTitle: true,
@@ -30,36 +30,238 @@ class MyApp extends StatelessWidget {
           ],
         ),
 
-        body: const Center(
+        body: Center(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text(
+              const Text(
                 "Biodata Diri",
                 style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
               ),
-              Text(
+              const Text(
                 "Nama: Abdurrahim",
                 style: TextStyle(
                   fontSize: 20,
                 ),
               ),
-              Text(
+              const Text(
                 "NPM: 2210010460",
                 style: TextStyle(fontSize: 20),
               ),
-              Text(
+              const Text(
                 "Semester: 5",
                 style: TextStyle(fontSize: 20),
               ),
-              Text(
+              const Text(
                 "Kelas: TI 5D REGULAR BJB",
                 style: TextStyle(fontSize: 20),
               ),
-              Text(
+              const Text(
                 "Tahun Angkatan: 2022",
                 style: TextStyle(fontSize: 20),
               ),
+
+              const SizedBox(
+                height: 20
+              ),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    width: 130,
+                    height: 130,
+                    child: Column(
+                      children: [
+                        IconButton(
+                          onPressed: () {},
+                          iconSize: 70,
+                          icon: const Icon(
+                            Icons.home,
+                            color: Colors.white,
+                          ),
+                        ),
+                        const Text(
+                          "Home",
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.white
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    width: 130,
+                    height: 130,
+                    child: Column(
+                      children: [
+                        IconButton(
+                          onPressed: () {},
+                          iconSize: 70,
+                          icon: const Icon(
+                            Icons.account_circle,
+                            color: Colors.white,
+                          ),
+                        ),
+                        const Text(
+                          "Profile",
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.white
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+
+                ],
+              ),
+
+              const SizedBox(
+                height: 20
+              ),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    width: 130,
+                    height: 130,
+                    child: Column(
+                      children: [
+                        IconButton(
+                          onPressed: () {},
+                          iconSize: 70,
+                          icon: const Icon(
+                            Icons.assignment,
+                            color: Colors.white,
+                          ),
+                        ),
+                        const Text(
+                          "KRS",
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.white
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    width: 130,
+                    height: 130,
+                    child: Column(
+                      children: [
+                        IconButton(
+                          onPressed: () {},
+                          iconSize: 70,
+                          icon: const Icon(
+                            Icons.assessment,
+                            color: Colors.white,
+                          ),
+                        ),
+                        const Text(
+                          "KHS",
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.white
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+
+                ],
+              ),
+              
+              const SizedBox(
+                height: 20
+              ),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    width: 130,
+                    height: 130,
+                    child: Column(
+                      children: [
+                        IconButton(
+                          onPressed: () {},
+                          iconSize: 70,
+                          icon: const Icon(
+                            Icons.calendar_month,
+                            color: Colors.white,
+                          ),
+                        ),
+                        const Text(
+                          "Jadwal",
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.white
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    width: 130,
+                    height: 130,
+                    child: Column(
+                      children: [
+                        IconButton(
+                          onPressed: () {},
+                          iconSize: 70,
+                          icon: const Icon(
+                            Icons.payment,
+                            color: Colors.white,
+                          ),
+                        ),
+                        const Text(
+                          "Pembayaran",
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.white
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+
+                ],
+              ),
+
             ],
           ),
         ),
