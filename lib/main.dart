@@ -68,63 +68,8 @@ class MyApp extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.blue,
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    width: 130,
-                    height: 130,
-                    child: Column(
-                      children: [
-                        IconButton(
-                          onPressed: () {},
-                          iconSize: 70,
-                          icon: const Icon(
-                            Icons.home,
-                            color: Colors.white,
-                          ),
-                        ),
-                        const Text(
-                          "Home",
-                          style: TextStyle(
-                            fontSize: 20,
-                            color: Colors.white
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.blue,
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    width: 130,
-                    height: 130,
-                    child: Column(
-                      children: [
-                        IconButton(
-                          onPressed: () {},
-                          iconSize: 70,
-                          icon: const Icon(
-                            Icons.account_circle,
-                            color: Colors.white,
-                          ),
-                        ),
-                        const Text(
-                          "Profile",
-                          style: TextStyle(
-                            fontSize: 20,
-                            color: Colors.white
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-
+                  tombol("Home", const Icon(Icons.home_outlined), Colors.red, context),
+                  tombol("Profile", const Icon(Icons.account_circle_outlined), Colors.green, context),
                 ],
               ),
 
@@ -135,63 +80,8 @@ class MyApp extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.blue,
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    width: 130,
-                    height: 130,
-                    child: Column(
-                      children: [
-                        IconButton(
-                          onPressed: () {},
-                          iconSize: 70,
-                          icon: const Icon(
-                            Icons.assignment,
-                            color: Colors.white,
-                          ),
-                        ),
-                        const Text(
-                          "KRS",
-                          style: TextStyle(
-                            fontSize: 20,
-                            color: Colors.white
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.blue,
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    width: 130,
-                    height: 130,
-                    child: Column(
-                      children: [
-                        IconButton(
-                          onPressed: () {},
-                          iconSize: 70,
-                          icon: const Icon(
-                            Icons.assessment,
-                            color: Colors.white,
-                          ),
-                        ),
-                        const Text(
-                          "KHS",
-                          style: TextStyle(
-                            fontSize: 20,
-                            color: Colors.white
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-
+                  tombol("Home", const Icon(Icons.assignment_outlined), Colors.orange, context),
+                  tombol("Home", const Icon(Icons.assessment_outlined), Colors.blue, context),
                 ],
               ),
               
@@ -202,63 +92,8 @@ class MyApp extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.blue,
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    width: 130,
-                    height: 130,
-                    child: Column(
-                      children: [
-                        IconButton(
-                          onPressed: () {},
-                          iconSize: 70,
-                          icon: const Icon(
-                            Icons.calendar_month,
-                            color: Colors.white,
-                          ),
-                        ),
-                        const Text(
-                          "Jadwal",
-                          style: TextStyle(
-                            fontSize: 20,
-                            color: Colors.white
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.blue,
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    width: 130,
-                    height: 130,
-                    child: Column(
-                      children: [
-                        IconButton(
-                          onPressed: () {},
-                          iconSize: 70,
-                          icon: const Icon(
-                            Icons.payment,
-                            color: Colors.white,
-                          ),
-                        ),
-                        const Text(
-                          "Pembayaran",
-                          style: TextStyle(
-                            fontSize: 20,
-                            color: Colors.white
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-
+                  tombol("Home", const Icon(Icons.calendar_month_outlined), Colors.purple, context),
+                  tombol("Home", const Icon(Icons.calendar_month_outlined), Colors.black, context),
                 ],
               ),
 
@@ -268,4 +103,31 @@ class MyApp extends StatelessWidget {
       ),
     );
   }
+}
+
+
+Widget tombol(
+    String judul, Icon iconTombol, Color warna, BuildContext context) {
+  return Container(
+    decoration: BoxDecoration(
+      color: warna,
+      borderRadius: BorderRadius.circular(10),
+    ),
+    width: 130,
+    height: 130,
+    child: Column(
+      children: [
+        IconButton(
+          onPressed: () {},
+          iconSize: 70,
+          color: Colors.white,
+          icon: iconTombol,
+        ),
+        Text(
+          judul,
+          style: const TextStyle(fontSize: 20, color: Colors.white),
+        )
+      ],
+    ),
+  );
 }
